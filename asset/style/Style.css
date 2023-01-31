@@ -149,7 +149,7 @@ aside{
 /* Right bar */
 #right-center{
     height: calc(82.5vh + 1.350rem);
-    overflow-y: hidden;
+    overflow: hidden;
 
 }
 
@@ -319,8 +319,8 @@ div.section-recent{
 }
 
 .content-top-right .box-main{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content:space-around;
 }
 
 .content-top-right .box-main .box{
@@ -329,7 +329,7 @@ div.section-recent{
     border-radius: .2rem;
     margin: .81rem;
     padding: .81rem;
-    max-width: calc(12.75rem - 3.22rem);
+    max-width: calc(12.75rem - 5.22rem);
     color: white;
     font-size: 14px;
     cursor:pointer;
@@ -628,4 +628,25 @@ div.control-music-right{
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
+
+@media (max-width: 920px) {
+    .box-920px{
+        display:none;
+    }
+}
+
+
+@media (max-width: 1080px) {
+    .box-1080px{
+        display:none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .box-1200px{
+        display:none;
+    }
+}
+
+
 
